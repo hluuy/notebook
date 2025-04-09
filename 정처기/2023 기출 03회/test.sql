@@ -1,3 +1,6 @@
+-- 2023 기출문제 03회
+
+-- 8. 다음 <SQL>을 모두 실행하였을 때 검색 결과를 작성하시오.
 CREATE TABLE Table_A(COL1 INTEGER, COL2 INTEGER);
 CREATE TABLE Table_B(COL1 INTEGER, COL2 INTEGER);
 

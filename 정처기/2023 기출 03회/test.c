@@ -58,3 +58,14 @@ int main(){
     printf("%d", sum);
     return 0;
 }
+
+// 15. 다음 C 프로그램의 실행 결과를 작성하시오.
+#include <stdio.h>
+
+int func(int n) {
+    if(n <= 1) return 1;
+    else return n * func(n - 1);
+}
+int main() {
+    printf("%d", func(7));
+}
