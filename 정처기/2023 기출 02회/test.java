@@ -20,3 +20,17 @@ public class YoungJin {
 변수 : m
 연산자 : % /
 괄호 : ()
+
+// 14. 다음의 Java 프로그램의 실행 결과를 작성하시오.
+public class YoungJin {
+    public static void main(String[] args) throws Exception {
+        string str1 = "Programming";
+        String str2 = "Programming";
+        String str3 = new String("Programming");
+
+        System.out.println(str1 == str2);
+        System.out.println(str1 == str3);
+        System.out.println(str1.equals(str3));
+        System.out.println(str2.equals(str3));
+    }
+}
