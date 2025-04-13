@@ -21,3 +21,27 @@ public class Main {
         System.out.print(b);
     }
 }
+
+// 17. 다음 Java 프로그램의 실행 결과를 작성하시오
+
+class comp{
+    int a;
+    comp(int a){
+        this.a = a;
+    }
+    int func(){
+        int b = 1;
+        for (int i = 1 ; i < a; i++){
+            b = a * i + b;
+        }
+        return a + b;
+    }
+}
+public class Main {
+    public static void main(String[] args) throws Exception {
+        comp obj = new comp(3);
+        obj.a = 5;
+        int b = obj.func();
+        System.out.print(obj.a + b);
+    }
+}
