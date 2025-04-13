@@ -15,3 +15,33 @@ public class Main{
         }
     }
 }
+
+// 19. 다음 Java 프로그램의 실행 결과를 작성하시오.
+public class Main {
+    static int size = 4;
+    public static void main(String[] args) throws Exception {
+        int[] arr = new int[size];
+        Array(arr);
+        for(int i = 0; i < size; i++){
+            System.out.print(arr[i] + " ");
+        }
+    }
+    public static void Array(int[] arr) {
+        for(int i = 0; i < size; i++){
+            arr[i] = i;
+        }
+    }
+}
+
+// 20. 다음 Java 프로그램의 실행 결과를 작성하시오
+
+public class Main {
+    public static void main(String[]args) throws Exception {
+        int a = 0;
+        for(int i = 1; i < 999; i++){
+            if(i % 3 == 0 && i % 2 !=0)
+            a = i;
+        }
+        System.out.print(a);
+    }
+}

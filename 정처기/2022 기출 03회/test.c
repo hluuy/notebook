@@ -28,3 +28,22 @@ int check(int w, int h, int j, int i){
     return 0;
 }
 
+// 13. 다음 C언어 프로그램의 실행 결과를 작성하시오.
+
+int main(){
+    int num1, num2, num3, p_num = 0;
+    for(num1 = 6; num1 <= 30; num1++){
+        num2 = num1/2;
+        num3 = 0;
+        for(int i = 1; i <= num2; i++){
+            if(num1%i==0){
+                num3=num3+i;
+            }
+        }
+        if(num1==num3){
+            p_num++;
+        }
+    }
+    printf("%d", p_num);
+    return 0;
+}
