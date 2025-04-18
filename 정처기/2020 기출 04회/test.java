@@ -34,3 +34,24 @@ public class Main {
 1 4 7 10 13
 2 5 8 11 14
 3 6 9 12 15
+
+// 20. 다음 Java 프로그램의 실행 결과를 작성하시오
+
+class Parent {
+    int compute(int num) {
+        if(num <= 1) return num;
+        return compute(num - 1) + compute(num - 2);
+    }
+}
+class Child extends Parent {
+    int compute(int num) {
+        if(num <= 1) return num;
+        return compute(num - 1) + compute(num - 3);
+    }
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Parent obj = new Child();
+        System.out.print(obj.compute(4));
+    }
+}
